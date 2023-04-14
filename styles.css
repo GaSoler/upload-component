@@ -1,0 +1,70 @@
+:root {
+  --white: #FFFFFF;
+  --green-100: #DAF2D9;
+  --green-300: #73B172;
+  --green-500: #4E884D;
+  --red-100: #F2D9D9;
+  --red-300: #E36363;
+  --purple-100: #C1B2FA;
+  --purple-300: #AC96E4;
+  --purple-500: #7A5FEC;
+  --purple-700: #7C3AED;
+  --gray-100: #F3F0FF;
+  --gray-300: #E3E3ED;
+  --gray-500: #E9E3F8;
+  --gray-600: #9892A6;
+  --gray-700: #857E95;
+  --gray-800: #746E82;
+  --gray-900: #575361;
+  --font-family: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gray-100);
+  color: var(--gray-800);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 440px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  margin-top: 8.875rem;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  border: var(--purple-100) 1px dashed;
+  border-radius: 8px;
+
+  background-color: var(--gray-100);
+
+  padding-top: 1.75rem;
+  padding-bottom: 2rem;
+}
+
+.upload-container p {
+  color: var(--purple-500);
+}
