@@ -36,11 +36,11 @@ button {
   cursor: pointer;
 }
 
-.container {
+.component {
   width: 440px;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   justify-content: center;
   align-items: center;
@@ -49,7 +49,7 @@ button {
   margin-top: 8.875rem;
 }
 
-.upload-container {
+.upload {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,6 +65,40 @@ button {
   padding-bottom: 2rem;
 }
 
-.upload-container p {
+.upload {
   color: var(--purple-500);
+}
+
+.files {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  padding-top: 1.25rem;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  background-color: var(--white);
+
+  padding: 0.5rem;
+
+  margin-bottom: 1.75rem;
+}
+
+.icon{
+  padding: 1rem 0.75rem;
+  border-radius: 4px;
+}
+
+.icon {
+  background-color: var(--gray-500);
 }
