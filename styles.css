@@ -65,17 +65,27 @@ button {
   padding-bottom: 2rem;
 }
 
-.upload {
+.upload p{
   color: var(--purple-500);
 }
 
+/*
+.files - ok
+.file - ok
+.icon - ok
+.content
+.title
+.progress
+.message
+*/
+
 .files {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  width: 100%;
 
   padding-top: 1.25rem;
 }
@@ -94,11 +104,61 @@ button {
   margin-bottom: 1.75rem;
 }
 
-.icon{
+.icon {
   padding: 1rem 0.75rem;
   border-radius: 4px;
+  background-color: var(--gray-500);
 }
 
-.icon {
-  background-color: var(--gray-500);
+.content {
+  flex: 1;
+  padding-left: 0.75rem;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.4rem;
+}
+
+.progress-bar {
+  width: 20.25rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--gray-300);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0, 1px rgba(255, 255, 255, 0.08);
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  background-image: linear-gradient(
+    to right,
+    #3A61ED,
+    #7C3AED
+  );
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved2 .loader {
+  width: 85%;
+  background-color: #ef476f;
+  animation: progressAnimation 6s;
+}
+
+
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+    background-color: #f9bcca;
+  }
+  100% {
+    width: 85%;
+    background-color: #ef476f;
+  }
 }
